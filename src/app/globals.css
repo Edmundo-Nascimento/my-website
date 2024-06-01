@@ -1,0 +1,74 @@
+:root {
+  --color_01: rgb(107, 139, 148);
+  --color_02: rgb(201, 164, 146);
+  --color_03: rgb(38, 22, 37);
+  --color_04: rgb(108, 85, 85);
+  --color_05: rgb(65, 75, 107);
+  --color_06: rgb(74, 44, 49);
+  --color_07: rgb(126, 132, 130);
+  --color_08: rgb(81, 76, 82);
+  --color_09: rgb(36, 68, 140);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+
+  background-color: var(--color_08);
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+    border: 10px solid var(--color_08);
+    border-radius: 20px;
+    background-color: var(--color_03);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  min-height: 100vh;
+}
+.main h1{
+  color: var(--color_01);
+}
+.main h2{
+  color: var(--color_02);
+}
+.main h7{
+  color: var(--color_07);
+}
+.main h4{
+  color: var(--color_04);
+}
+.main h5{
+  color: var(--color_05);
+}
+.main h6{
+  color: var(--color_06);
+}
+.main span{
+  color: var(--color_08);
+}
+.main p{
+  color: var(--color_09);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
